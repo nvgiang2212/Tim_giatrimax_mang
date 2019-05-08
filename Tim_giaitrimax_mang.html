@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tim gia tri lon nhat trong mang</title>
+</head>
+<body>
+	<script>
+		// Khai báo mảng x
+		let x = [-3, 5, 9, 4, 81, 26, 100];
+
+		// Khai báo biến max để lưu giá trị lớn nhất mặc định là x[0]
+		let max = x[0];
+
+		// Khai báo biến index mặc định gán giá trị bằng 0, để lưu chỉ số của phần tử lớn nhất trong mảng
+		let index = 0;
+
+		// Duyệt toàn bộ mảng x, từ phần tử tiếp theo đến hết mảng
+		for (let i = 0; i<x.length; i++) {
+			// Kiểm tra nếu 1 phần tử trong mảng có giá trị lớn hơn max thì gán max chính là phần tử đó và gán index là vị trí của phần tử đó
+			if (x[i] > max) {
+				max = x[i];
+				index = i;
+			}
+		}
+
+		alert("Max: " + max + " ở vị trí " + index);
+	</script>
+</body>
+</html>
